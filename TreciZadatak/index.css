@@ -1,28 +1,46 @@
 body {
-  background-color: lightgray;
+  background: #176d81;
 }
 
 main {
-  margin: 15px auto;
-  max-width: 400px;
+  margin: .9375rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+}
+
+.profile-wrapper ul{
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(3,25rem);
+  grid-template-rows: auto;
+  gap: 3rem;
 }
 
 li {
   list-style: none;
-  margin-bottom: 15px;
 }
 
-.profile {
-  background-color: rgb(235, 235, 235);
-  padding: 10px;
+
+.profile-wrapper__details {
+  background: #71adb5; 
+  min-height: 100%;
+  padding: .625rem;
+  border-radius: 5%;
 }
 
-.personal_data {
+.profile-wrapper__details p{
+  word-break: break-all;
+}
+
+.profile-wrapper__personal-data {
   text-align: left;
+  padding: 0 1.25rem;
 }
 
 #profilePicture {
-  width: 175px;
+  width: 8.75rem;
+  object-fit: contain;
   border-radius: 50%;
 }
